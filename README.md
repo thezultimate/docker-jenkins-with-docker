@@ -1,6 +1,7 @@
 # Jenkins in Docker with Docker
 
-This is a simple template for running Jenkins inside a Docker container with Docker installed.
+This is a simple template for running Jenkins inside a Docker container with Docker installed based on the official 
+Jenkins LTS image. For more information, follow [this link](https://github.com/jenkinsci/docker).
 
 It can be run, e.g., by running the following steps:
 
@@ -16,3 +17,4 @@ It can be run, e.g., by running the following steps:
 3. Run the created docker image: 
 
         sudo docker run -p 8080:8080 -p 50000:50000 -v ~/jenkins:/var/jenkins_home -v /var/run/docker.sock:/var/run/docker.sock user/jenkins-with-docker
+        
